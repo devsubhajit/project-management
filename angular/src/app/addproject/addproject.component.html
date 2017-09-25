@@ -1,0 +1,8 @@
+<form class="well" (ngSubmit)="addProject($event)">
+    <div class="form-group">
+        <input type="text" [(ngModel)]="projectname" name="projectname" class="form-control" placeholder="Add Name ..">
+        <input type="number" [(ngModel)]="estimation" name="estimation" class="form-control" placeholder="0">
+        <input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="John, Jonshon, Brad, ...">
+    </div>
+    <button type="submit" class="btn btn-success">Add</button>
+</form>

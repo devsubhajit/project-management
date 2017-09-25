@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-sm-6 col-md-3" *ngFor="let project of projects">
+        <div class="thumbnail">
+            <div class="caption">
+                <h1>{{project.projectName}}</h1>
+                <p>{{project.estimation}} hours {{project._id}}</p>
+                <button type="button" class="btn btn-success"><a routerLink="/details/{{project._id}}">Details</a></button>
+            </div>
+        </div>
+    </div>
+</div>
